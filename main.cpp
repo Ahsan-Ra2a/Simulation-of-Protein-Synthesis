@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-using namespace std;
+
 
 class dna_rna_aminoacids
 {
@@ -15,7 +15,7 @@ public:
 		val = 0;
 
 	loop:
-		cin >> dna;
+		std::cin >> dna;
 		int j = 0;
 
 		int len = strlen(dna);
@@ -25,7 +25,7 @@ public:
 		{
 			if ((dna[i] != 'a' && dna[i] != 'A' && dna[i] != 't') && dna[i] != 'T' && dna[i] != 'c' && dna[i] != 'C' && dna[i] != 'g' && dna[i] != 'G')
 			{
-				cout << "Invalid string\nenter another string:";
+				std::cout << "Invalid string\nenter another string:";
 				goto loop;
 			}
 			i++;
@@ -41,8 +41,8 @@ public:
 			}
 			i += 3;
 		}
-		cout << endl
-			 << "protein is not present" << endl;
+		std::cout << std::endl
+			 << "protein is not present" << std::endl;
 		exit(1);
 	loop3:
 		i = 0;
@@ -63,8 +63,8 @@ public:
 			}
 			i += 3;
 		}
-		cout << endl
-			 << "protein is not present" << endl;
+		std::cout << std::endl
+			 << "protein is not present" << std::endl;
 		exit(1);
 	loop2:
 		i = 0;
@@ -92,7 +92,7 @@ public:
 				i += 3;
 				++k;
 
-				cout << endl;
+				std::cout << std::endl;
 			}
 
 			i += 3;
@@ -154,7 +154,7 @@ public:
 					case 'c':
 					case 'C':
 					{
-						cout << "F";
+						std::cout << "F";
 						break;
 					}
 					case 'A':
@@ -162,7 +162,7 @@ public:
 					case 'G':
 					case 'g':
 					{
-						cout << "L";
+						std::cout << "L";
 						break;
 					}
 					default:
@@ -186,7 +186,7 @@ public:
 					case 'G':
 					case 'g':
 					{
-						cout << "S";
+						std::cout << "S";
 						break;
 					}
 					default:
@@ -204,13 +204,13 @@ public:
 					case 'u':
 					case 'U':
 					{
-						cout << "Y";
+						std::cout << "Y";
 						break;
 					}
 					case 'c':
 					case 'C':
 					{
-						cout << "Y";
+						std::cout << "Y";
 						break;
 					}
 					case 'A':
@@ -218,7 +218,7 @@ public:
 					case 'g':
 					case 'G':
 					{
-						cout << ".";
+						std::cout << ".";
 						break;
 					}
 					default:
@@ -238,19 +238,19 @@ public:
 					case 'C':
 					case 'c':
 					{
-						cout << "C";
+						std::cout << "C";
 						break;
 					}
 					case 'g':
 					case 'G':
 					{
-						cout << "W";
+						std::cout << "W";
 						break;
 					}
 					case 'a':
 					case 'A':
 					{
-						cout << ".";
+						std::cout << ".";
 						break;
 					}
 					default:
@@ -275,13 +275,13 @@ public:
 				case 'U':
 				case 'u':
 				{
-					cout << "L";
+					std::cout << "L";
 					break;
 				}
 				case 'C':
 				case 'c':
 				{
-					cout << "P";
+					std::cout << "P";
 					break;
 				}
 				case 'A':
@@ -294,7 +294,7 @@ public:
 					case 'C':
 					case 'c':
 					{
-						cout << "H";
+						std::cout << "H";
 						break;
 					}
 					case 'A':
@@ -302,7 +302,7 @@ public:
 					case 'G':
 					case 'g':
 					{
-						cout << "Q";
+						std::cout << "Q";
 						break;
 					}
 					}
@@ -311,7 +311,7 @@ public:
 				case 'G':
 				case 'g':
 				{
-					cout << "R";
+					std::cout << "R";
 					break;
 				}
 				default:
@@ -336,13 +336,13 @@ public:
 					case 'A':
 					case 'a':
 					{
-						cout << "I";
+						std::cout << "I";
 						break;
 					}
 					case 'G':
 					case 'g':
 					{
-						cout << "M";
+						std::cout << "M";
 						break;
 					}
 					default:
@@ -366,7 +366,7 @@ public:
 					case 'G':
 					case 'g':
 					{
-						cout << "T";
+						std::cout << "T";
 						break;
 					}
 					default:
@@ -386,7 +386,7 @@ public:
 					case 'C':
 					case 'c':
 					{
-						cout << "N";
+						std::cout << "N";
 						break;
 					}
 					case 'A':
@@ -394,7 +394,7 @@ public:
 					case 'G':
 					case 'g':
 					{
-						cout << "K";
+						std::cout << "K";
 						break;
 					}
 					default:
@@ -414,7 +414,7 @@ public:
 					case 'C':
 					case 'c':
 					{
-						cout << "S";
+						std::cout << "S";
 						break;
 					}
 					case 'A':
@@ -422,7 +422,7 @@ public:
 					case 'G':
 					case 'g':
 					{
-						cout << "R";
+						std::cout << "R";
 						break;
 					}
 					default:
@@ -447,19 +447,19 @@ public:
 				case 'U':
 				case 'u':
 				{
-					cout << "V";
+					std::cout << "V";
 					break;
 				}
 				case 'c':
 				case 'C':
 				{
-					cout << "A";
+					std::cout << "A";
 					break;
 				}
 				case 'G':
 				case 'g':
 				{
-					cout << "G";
+					std::cout << "G";
 					break;
 				}
 				case 'A':
@@ -472,7 +472,7 @@ public:
 					case 'c':
 					case 'C':
 					{
-						cout << "D";
+						std::cout << "D";
 						break;
 					}
 					case 'A':
@@ -480,7 +480,7 @@ public:
 					case 'G':
 					case 'g':
 					{
-						cout << "E";
+						std::cout << "E";
 						break;
 					}
 					}
@@ -511,7 +511,7 @@ public:
 
 			find(c);
 		}
-		cout << "   " << value[val] << " - " << valend[val];
+		std::cout << "   " << value[val] << " - " << valend[val];
 		val++;
 	}
 };
