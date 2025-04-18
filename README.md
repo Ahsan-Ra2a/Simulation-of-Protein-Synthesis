@@ -1,7 +1,3 @@
-Here’s a **professional and complete README** for your DNA → RNA → Protein translation project in C++:
-
----
-
 # 🧬 DNA–Protein Conversion Engine
 
 A C++ program that simulates the **central dogma of molecular biology**, translating a DNA sequence into its corresponding RNA and finally into an amino acid (protein) sequence. Built from scratch with custom logic, the project performs **biological validation, transcription, and translation** without using external libraries.
